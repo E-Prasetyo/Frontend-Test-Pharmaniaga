@@ -29,9 +29,9 @@ const Accordion = ({item}) =>{
                         <FontAwesomeIcon icon={faChevronDown} size="xs"/>}
                 </span>
             </div>
-            <div className={`flex flex-col ${open ? 'hidden': ''} pl-4 text-sm border`}>
+            <div className={`flex flex-col ${open ? 'hidden': ''} pl-2 text-sm border`}>
                 {item?.content.map((itm, i) =>{
-                    return <div key={i}>{itm.name}</div>
+                    return <div key={i} className="border-b-2 border-gray-300 hover:bg-gray-300">{itm.name}</div>
                 })}
 
             </div>

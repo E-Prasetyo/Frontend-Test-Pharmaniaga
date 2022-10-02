@@ -12,18 +12,18 @@ import ModalLogout from './Dashboard/ModalLogout'
 import { useNavigate } from 'react-router-dom'
 
 const MaiNavigation = [
-  { name: "Dashboard", icon: faGauge, content: [{name:'one'},{name:'two'}] }, 
-  { name: "Transaction", icon: faMoneyBillTransfer, content: [{name:'one'},{name:'two'}]},
-  { name: "Contacts", icon: faAddressBook, content: [{name:'one'},{name:'two'}]},
-  { name: "Features", icon: faTools, content: [{name:'one'},{name:'two'}]},
-  { name: "Library", icon: faBook, content: [{name:'one'},{name:'two'}]}
+  { name: "Dashboard", icon: faGauge, content: [{name:'Index'},{name:'Child'}] }, 
+  { name: "Transaction", icon: faMoneyBillTransfer, content: [{name:'Index'},{name:'Child'}]},
+  { name: "Contacts", icon: faAddressBook, content: [{name:'Index'},{name:'Child'}]},
+  { name: "Features", icon: faTools, content: [{name:'Index'},{name:'Child'}]},
+  { name: "Library", icon: faBook, content: [{name:'Index'},{name:'Child'}]}
 ] 
 
 const Settings = [
-  { name: "Base Wallet", icon: faBox, content: [{name:'one'},{name:'two'}]}, 
-  { name: "My Contacts", icon: faIdCard, content: [{name:'one'},{name:'two'}]},
-  { name: "Invoice", icon: faFileInvoice, content: [{name:'one'},{name:'two'}]},
-  { name: "Schedules", icon: faCalendarDay, content: [{name:'one'},{name:'two'}]}
+  { name: "Base Wallet", icon: faBox, content: [{name:'Index'},{name:'Child'}]}, 
+  { name: "My Contacts", icon: faIdCard, content: [{name:'Index'},{name:'Child'}]},
+  { name: "Invoice", icon: faFileInvoice, content: [{name:'Index'},{name:'Child'}]},
+  { name: "Schedules", icon: faCalendarDay, content: [{name:'Index'},{name:'Child'}]}
 ] 
 
 

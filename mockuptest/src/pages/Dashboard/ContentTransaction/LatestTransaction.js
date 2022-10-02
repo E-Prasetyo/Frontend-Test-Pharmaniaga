@@ -10,16 +10,16 @@ const data= [
     {
         date: "Mon, Mar 2",
         content:[
-            {title: "Payment sent to Shakir", price:"$560.00", icon: faArrowCircleRight},
-            {title: "Sllary from Redwhale", price:"$12.600.00", icon: faArrowCircleLeft},
-            {title: "Mone sent to wise.com", price:"$3.000.00", icon: faPaperPlane}
+            {title: "Payment sent to Shakir", price:"$560.00", icon: faArrowCircleRight, income:false},
+            {title: "Salary from Redwhale", price:"$12.600.00", icon: faArrowCircleLeft, income:true},
+            {title: "Mone sent to wise.com", price:"$3.000.00", icon: faPaperPlane, income:false}
         ]
     },
     {
         date: "Mon, Mar 1",
         content:[
-            {title: "Payment sent to Shakir", price:"$560.00", icon: faArrowCircleRight},
-            {title: "Sllary from Redwhale", price:"$12.600.00", icon: faArrowCircleLeft}
+            {title: "Payment sent to Shakir", price:"$560.00", icon: faArrowCircleRight, income:false},
+            {title: "Salary from Redwhale", price:"$12.600.00", icon: faArrowCircleLeft, income:true}
         ]
     }
 
@@ -28,7 +28,7 @@ const data= [
 const LatestTransaction = () => {
   return (
     <>
-        <div className='md:col-span-2 rounded-md bg-[#f9faff] p-4'>
+        <div className='md:col-span-2 rounded-xl bg-[#f9faff] p-4'>
             <div  className='flex flex-row justify-between items-center'>
                 <div className='font-bold text-xs'>Latest Transactions</div>
                 <div className='font-bold text-xs text-gray-400 space-x-5'>
@@ -51,7 +51,7 @@ const LatestTransaction = () => {
                                         </div>
                                         <p className='font-bold text-sm'>{itm.title}</p>
                                     </div>
-                                    <div className='text-xs text-end'>
+                                    <div className={`text-xs text-end ${itm.income ? '':'text-red-500'}`}>
                                         {itm.price}
                                     </div>
                                 </div>

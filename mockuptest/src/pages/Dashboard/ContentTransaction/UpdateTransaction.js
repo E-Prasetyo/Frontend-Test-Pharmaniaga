@@ -31,7 +31,7 @@ const data= [
             {
                 title: "Income:Jane transfers", price:"+$500", 
                 icon: faFileInvoiceDollar,color:"bg-orange-500", 
-                income:true, success:true
+                income:true, success:false
             },
             {
                 title: "Income:Jane transfers", price:"+$500", 
@@ -65,7 +65,12 @@ const UpdateTransaction = () => {
                                     <div className={`${itm.color} px-2 py-1 rounded-md`}>
                                         <FontAwesomeIcon icon={itm.icon} size="sm" />
                                     </div>
-                                    <p className='font-bold text-sm'>{itm.title}</p>
+                                    <div className='flex flex-col'>
+                                        <p className='font-bold text-sm'>{itm.title}</p>
+                                        <p className='font-bold text-gray-400 text-[0.5rem]'>
+                                            {itm.success ? "Unsuccessfully":"Successfully"}
+                                        </p>
+                                    </div>
                                 </div>
                                 <div className={`text-xs text-end ${itm.income ? '':'text-red-500'}`}>
                                     {itm.price}
